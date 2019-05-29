@@ -1,3 +1,4 @@
+@-moz-document url("http://172.16.94.19:8080/JudgeOnline/"), url-prefix("http://172.16.94.19:8080/JudgeOnline/"), domain("172.16.94.19:8080/JudgeOnline/") {
 /* 总局控制 */
 
 tr td[align=middle]{
@@ -240,4 +241,90 @@ body form input.sstr{
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active {
 	background-color: hsla(0, 0%, 100%, .71);
+}
+}
+
+@-moz-document url-prefix("http://172.16.94.19:8080/JudgeOnline/submitpage") {
+/* 提交代码界面 */
+textarea
+{
+     border-top:2px #777;
+     border-left:2px #808080;
+     border-bottom:2px #939393;
+     border-right:2px #a6a6a6;
+     background:#2f2f2f99 ;
+     font-family:微软雅黑;
+     width:640px;
+     height:200px;
+     font-size:15px;
+     color:#62c447;
+	transition:height 1s;
+	-webkit-transition:height 1s;
+}
+
+textarea:hover
+{
+	height:400px;
+     background:#2f2f2f;
+}
+
+p align{
+     background:#f00;
+}
+
+form{
+    border:hidden;
+}
+
+p{
+     border-bottom:none;
+}
+
+/* 表格 */
+table{
+     background-color:#000000cf;    
+     border:#fff0;
+}
+
+
+/* 安徽师范大学图标 */
+img{
+     display:none;
+}
+
+/* 按钮 */
+input{
+     font-family:张海山锐谐体;
+     font-weight:bold;
+     color:#000;
+     
+}
+
+/* 选择栏（Language） */
+select{
+     background:#ffffff78;
+     color:#000;
+     cursor:pointer;
+}
+
+ 
+}
+
+@-moz-document url-prefix("http://172.16.94.19:8080/JudgeOnline/faq.htm") {
+body{
+     background:url(http://r.photo.store.qq.com/psb?/V10mVoXN3TUbtj/aBvLlWq1hhGxCNvkbSwP4bsKUGLUhgFQafEeiAj36EY!/r/dDABAAAAAAAA) fixed;
+	background-origin:content-box;
+	background-size: cover;
+}
+
+p.MsoNormal{
+     color:#fff;
+     font-family:微软雅黑;
+}
+.answer{
+     color:#fff;
+}
+p.span{
+     color:#fff;
+}
 }
