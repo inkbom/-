@@ -1,0 +1,243 @@
+/* 总局控制 */
+
+tr td[align=middle]{
+	background:url(http://r.photo.store.qq.com/psb?/V10mVoXN3TUbtj/Jj9rdZtYPgQPeP*aLePoEYzYl8TMi3G1G.OU9sHqyts!/r/dPQAAAAAAAAA) ;
+	 background-origin:content-box;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position-y:-110px;
+}
+
+img[src*="logo.jpg"]{
+	background:#fff0;
+	opacity:0.0;
+}
+
+/* 上方导航栏 */
+
+tr td form a{
+     color:#dad9d9;
+}
+
+tr td form a:hover{
+     color:#fff;
+     background:#969696d4;
+     
+}
+
+/* 登录窗口 */
+
+
+
+/*  题目列表字 */
+tr td a{
+     color:#c8c8c8;
+}
+
+tr td a:hover{
+     color:#fff;
+}
+
+tbody tr td{
+     color:#eee;
+     font-family:微软雅黑;
+}
+
+b font{
+     color:#ff00a1;
+}
+
+a font{
+     color:#fff;
+}
+
+body form font{
+     color:#2991ff;
+     font-family:张海山锐谐体;
+}
+
+
+
+body table tbody tr th{
+     color:#e3e3e3f0;
+     font-weight:bold;
+     text-shadow:0px 0px 3px #878787e0;
+}
+
+p font a{
+      margin:auto;
+     color:#999; 
+}
+
+
+/* 中央Volume等 */
+body center font{
+     text-shadow:0px 0px 8px #000c;
+     color:#fff;
+     font-family:张海山锐谐体;
+}
+
+body center font:visited{
+     color:#b06e6e;
+     background:#be2a2a;
+}
+
+body center font:hover{
+     color:#7a0c0c;
+}
+
+body center{
+     position: sticky;
+     margin: auto;
+     padding: 0;
+     top: 0;
+     background:#3d3d3d;
+     width:983px;
+}
+
+/* 全体 */
+tr{
+     background:#ffffff24;
+}
+
+
+/* 框架 */
+
+form{
+     font-family:bahnuschrift;
+     font-weight:bold;
+     text-align:center;
+}
+
+/* 表格 */
+
+table{
+     margin:auto;
+	border-bottom: 1px #0000002e;
+     background:#0009;
+     border-right:1px #fff0;
+     border-left:1px #fff0;
+     border-top:1px #fff0;
+}
+
+table:hover{
+     background:#000000b5;
+}
+
+body table tbody tr:hover{
+     background:#212121a8;
+}
+
+
+/*安徽师范大学标题*/
+
+
+hr{
+     color:#891818;
+     height:0px;
+}
+p img{
+     display:none;
+     margin:auto;
+}
+
+body table tbody tr td img{
+     background:#ffffff05;
+}
+
+
+
+/* 背景 */
+body{
+     background:#0000 url(http://r.photo.store.qq.com/psb?/V10mVoXN3TUbtj/uvKTl7YEQ3EyXaw1E0EeaPWs3UHLxoAa3abbZEOR86Y!/r/dEcBAAAAAAAA) fixed;
+     background-origin:content-box;
+     background-size:cover;
+}
+
+/* 文字 */
+p font
+{
+     
+     font-family:agency fb;
+     font-size:16px;
+     letter-spacing:1px;
+     color:#fff;
+     border-bottom-width:1px;
+}
+
+body table tbody tr td font{
+     color:#fff;
+}
+
+
+/* 上方导航栏 */
+tbody{
+     color:#000;
+     background:#ffffff0d;
+}
+
+
+/*上方搜索条*/
+body table tbody tr td form input{
+     color:#000;
+     background:#eeeaea8f;
+     border-right:#fff0;
+     border-top:#fff0;
+     border-left:#fff0;
+     border-bottom:#fff0;
+     padding: 1px;
+     transition:height 1s;
+	-webkit-transition:height 1s;
+}
+
+body table tbody tr td form input:hover
+{
+     background:#fff;
+}
+
+body form input{
+      color:#000;
+     top:20%;
+     background:#eeeaea8f;
+     border-right:#fff0;
+     border-top:#fff0;
+     border-left:#fff0;
+     border-bottom:#fff0;
+     padding: 4px;
+}
+body form input:hover
+{
+     background:#fff;
+}
+
+body form input.sstr{
+     width:200px;
+}
+
+/*  滚动条 */
+
+.ps__rail-y,
+.mCSB_draggerRail,
+.ps__scrollbar-y-rail {
+	background-color: rgba(0, 0, 0, .23)!important;
+}
+::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+.custom-scrollbar::-webkit-scrollbar-track-piece {
+	background-color: #1f101af0;
+}
+::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background-color: hsla(0, 0%, 100%, .11);
+	border-radius: 10px;
+	border: none;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+	background-color: hsla(0, 0%, 100%, .71);
+}
