@@ -1,4 +1,176 @@
+@-moz-document url-prefix("http://172.16.94.19:8080/JudgeOnline/problemlist"), url-prefix("http://172.16.94.19:8080/JudgeOnline/pastcontests"), url-prefix("http://172.16.94.19:8080/JudgeOnline/status") {
+:root{
+	--c-blue:#0076ff;
+	--c-choice:#4394fc;
+	--c-gray:#3d3d3d;
+}
+
+@keyframes showlist{
+	0%{
+		
+		width:50%;
+	}
+	100%{
+		width:100%;
+	}
+}
+
+@keyframes showNew{
+	0%{
+		opacity: 0;
+		transform: translate(0, 40%);
+	}
+}
+
+@keyframes focus{
+	0%{
+		background:#3b3b3bcc;
+		box-shadow:0 0 0px var(--c-choice);
+	}
+	100%{
+		background:var(--c-choice);
+		box-shadow:0 0 10px var(--c-choice);
+	}
+	
+}
+
+
+
+/* 中央Volum导航栏 */
+body center font{
+     text-shadow:0px 0px 8px #000c;
+     color:#fff;
+     font-family:张海山锐谐体;
+	
+}
+
+
+body center a font[color=red]{
+	color:var(--c-blue);
+	text-shadow:0 0 20px var(--c-blue);
+}
+
+body center a font:hover{
+     color:var(--c-blue);
+	text-shadow:0 0 10px var(--c-blue);
+}
+
+body center{
+     position: sticky;
+     margin: auto;
+     padding: 0;
+     top: 0;
+     background:#2e2e2e;
+     width:983px;
+}
+
+
+/* 框架 */
+
+
+
+/* 表格 */
+
+table{
+     margin:auto;
+	border-bottom: 1px #0000002e;
+     background:#0009;
+     border-right:1px #fff0;
+     border-left:1px #fff0;
+     border-top:1px #fff0;
+}
+
+tbody tr[bgcolor]{
+	background:#2d2d2da8;
+}
+tbody tr[bgcolor]:hover{
+	background:#2d2d2da8;
+	box-shadow:0 0 0px var(--c-choice);
+		border:1px #fff0;
+}
+
+
+body table tbody tr:hover{
+    transition: background ,box-shadow 0.25s; background:var(--c-choice);
+
+	color:#fff;
+		
+}
+
+
+
+}
+
 @-moz-document url("http://172.16.94.19:8080/JudgeOnline/"), url-prefix("http://172.16.94.19:8080/JudgeOnline/"), domain("172.16.94.19:8080/JudgeOnline/") {
+:root{
+	--c-blue:#0076ff;
+	--c-choice:#4394fc;
+	--c-gray:#626262;
+}
+
+@keyframes showNew{
+	0%{
+		opacity: 0;
+		transform: translate(0, 40%);
+	}
+}
+
+@keyframes focus{
+	0%{
+		background:#3b3b3bcc;
+		box-shadow:0 0 0px var(--c-choice);
+	}
+	100%{
+		background:var(--c-choice);
+		box-shadow:0 0 10px var(--c-choice);
+	}
+	
+}
+
+/* 登录 */
+html body[bgcolor="#F1F1FD"]{
+	background:#0000;
+		color:#fff;
+	font-family:微软雅黑;
+	
+}
+body[bgcolor="#F1F1FD"] a[href*="login"]{
+	color:#fff;
+	text-decoration:none;
+}
+body[bgcolor="#F1F1FD"] a[href*="login"]:hover{
+	color:#f00;
+	text-shadow:2px 2px 4px #f00;
+	text-decoration:none;
+}
+body[bgcolor="#F1F1FD"] a[href*="mail"]{
+	text-decoration:none;
+	color:#fff;
+
+}
+body[bgcolor="#F1F1FD"] a[href*="mail"]:hover{
+	text-decoration:none;
+	color:#46d7ff;
+	text-shadow:2px 2px 4px #47b6ff;
+}
+
+td a[href*="login"]:hover{
+	color:#e70000;
+	text-decoration:none;
+	text-shadow:1px 1px 10px #f00;
+}
+
+td a[href*="mail"]:hover{
+	color:#e70000;
+	text-decoration:none;
+}
+td a[href*="mail"] font:hover{
+	color:#0070ff;
+	text-decoration:none;
+	text-shadow:0 0 10px #0454ff;
+}
+
+
 /* 总局控制 */
 
 tr td[align=middle]{
@@ -15,20 +187,43 @@ img[src*="logo.jpg"]{
 }
 
 /* 上方导航栏 */
+tr[bgcolor="#6589D1"] th{
+	font-family:微软雅黑;
+	color:#fff;
+	text-shadow:0px 0px 0px #fff0;
+}
+
+
 
 tr td form a{
-     color:#dad9d9;
+     color:#c3c3c3;
+	font-family:微软雅黑;
+	font-weight:normal;
 }
 
 tr td form a:hover{
-     color:#fff;
-     background:#969696d4;
-     
+     color:var(--c-blue);
+	text-decoration:none;
 }
 
+td a[href="bbs"]:hover,
+a[href="./"]:hover,
+a[href="faq.htm"]:hover,
+a[href="pastcontests"]:hover,
+a[href="contests"]:hover{
+	text-decoration:none;
+	color:var(--c-blue);
+}
+
+
+
 /* 登录窗口 */
-
-
+form[action="login?action=login"] input{
+	float:right;
+}
+form[action="login?action=login"]{
+	text-align:left;
+}
 
 /*  题目列表字 */
 tr td a{
@@ -71,20 +266,22 @@ p font a{
 }
 
 
-/* 中央Volume等 */
+/* 中央Volum导航栏 */
 body center font{
      text-shadow:0px 0px 8px #000c;
      color:#fff;
      font-family:张海山锐谐体;
 }
 
-body center font:visited{
-     color:#b06e6e;
-     background:#be2a2a;
+
+body center a font[color=red]{
+	color:var(--c-blue);
+	text-shadow:0 0 20px var(--c-blue);
 }
 
-body center font:hover{
-     color:#7a0c0c;
+body center a font:hover{
+     color:var(--c-blue);
+	text-shadow:0 0 10px var(--c-blue);
 }
 
 body center{
@@ -92,7 +289,7 @@ body center{
      margin: auto;
      padding: 0;
      top: 0;
-     background:#3d3d3d;
+     background:#2e2e2e;
      width:983px;
 }
 
@@ -121,30 +318,16 @@ table{
      border-top:1px #fff0;
 }
 
-table:hover{
-     background:#000000b5;
+tbody tr[bgcolor]{
+	background:#2d2d2da8;
+}
+tbody tr[bgcolor]:hover{
+	background:#2d2d2da8;
+	box-shadow:0 0 0px var(--c-choice);
+		border:1px #fff0;
 }
 
-body table tbody tr:hover{
-     background:#212121a8;
-}
 
-
-/*安徽师范大学标题*/
-
-
-hr{
-     color:#891818;
-     height:0px;
-}
-p img{
-     display:none;
-     margin:auto;
-}
-
-body table tbody tr td img{
-     background:#ffffff05;
-}
 
 
 
@@ -204,7 +387,11 @@ body form input{
      border-top:#fff0;
      border-left:#fff0;
      border-bottom:#fff0;
-     padding: 4px;
+}
+a[href="registerpage"]{
+	color:#fff;
+	text-decoration:none;
+	font-family:微软雅黑;
 }
 body form input:hover
 {
@@ -214,6 +401,117 @@ body form input:hover
 body form input.sstr{
      width:200px;
 }
+
+
+
+/* 页脚 */
+
+/* 回到顶部 */
+a[href="#top"]{
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	line-height:250%;
+	text-align:center;
+	position:fixed;
+	display:block;
+	right:0px;
+	bottom:-1%;
+	box-shadow:0 0 20px 5px var(--c-blue);
+background:var(--c-blue);
+	background-size:cover;
+	border-radius: 5px;
+	height:35px;
+	width:45px;
+}
+a[href="#top"]:hover{
+	color:#fff;
+	background:#ff2c2c;
+	background-size:cover;
+	box-shadow:0 0 40px 10px#f00;
+	animation:top 0.15s infinite;
+}
+
+@keyframes top{
+	0%{
+		bottom:0px;
+	}
+	25%{
+		right:2px;
+	}
+	50%{
+		bottom:-3px;
+	}
+	75%{
+		right:-2px;
+	}
+}
+/* 返回 */
+img[src*="goback"]{
+	display:none;
+}
+a[href*="history.go"]{
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	line-height:120%;
+	text-align:center;
+	position:fixed;
+	display:block;
+	right:60px;
+	bottom:-1%;
+	box-shadow:1px 1px 10px 0px #000;
+background:var(--c-gray);
+	background-size:cover;
+	border-radius: 5px;
+	height:35px;
+	width:45px;
+}
+a[href*="history.go"]:hover{
+	
+	background:#2cff3a;
+	background-size:cover;
+	box-shadow:0 0 30px 10px#0dff00;
+	bottom:1px;
+	transition:bottom 0.2s;
+}
+
+img[src*="top"]{
+	display:none;
+}
+/* 回到首页 */
+img[src*=home]{
+	display:none;
+}
+a[href="."]{
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	line-height:120%;
+	text-align:center;
+	position:fixed;
+	display:block;
+	right:110px;
+	bottom:-1%;
+	box-shadow:1px 1px 10px 0px #000;
+background:var(--c-gray);
+	background-size:cover;
+	border-radius: 5px;
+	height:35px;
+	width:45px;
+}
+a[href="."]:hover{
+	
+	background:#2cff3a;
+	background-size:cover;
+	box-shadow:0 0 30px 10px#0dff00;
+	bottom:1px;
+	transition:bottom 0.2s;
+}
+
+
+
+
 
 /*  滚动条 */
 
@@ -326,5 +624,153 @@ p.MsoNormal{
 }
 p.span{
      color:#fff;
+}
+}
+
+@-moz-document url-prefix("http://172.16.94.19:8080/JudgeOnline/status") {
+:root{
+	--c-white:#424242;
+	--c-pupper:#9d00ff;
+}
+
+@keyframes up{
+	from{
+		bottom:-25px;
+	}
+	to{
+		bottom:-18px;
+	}
+}
+
+form[action="status"]{
+	color:#fff;
+	font-family:微软雅黑;
+}
+
+p[align="center"]{
+	color:#f000;
+}
+
+a[href="status"]{
+	display:none;
+}
+
+/* 上一页 */
+a[href*="bottom"]{
+	display:block;
+	position:fixed;
+	bottom:-25px;
+	height:50px;
+	width:95px;
+	right:245px;
+	box-shadow:0 0 10px #00000094;
+	border-radius:2px;
+	background:var(--c-white);
+	line-height:25px;
+	text-decoration:none;
+}
+a[href*="bottom"]:hover{
+	bottom:-18px;
+	background:var(--c-pupper);
+	box-shadow:0 0 30px 10px var(--c-pupper);
+	text-shadow:1px 1px 1px #000;
+	animation:up 0.15s;
+}
+
+
+
+/* 下一页 */
+a[href*="?top"]{
+	display:block;
+	position:fixed;
+	bottom:-25px;
+	height:50px;
+	width:68px;
+	right:170px;
+	box-shadow:0 0 10px #000;
+	border-radius:2px;
+	background:var(--c-white);
+	line-height:25px;
+	text-decoration:none;
+}
+
+a[href*="top"]:hover{
+	bottom:-18px;
+	background:var(--c-pupper);
+	box-shadow:0 0 30px 10px var(--c-pupper);
+	text-shadow:1px 1px 1px #000;
+	animation:up 0.15s;
+}
+}
+
+@-moz-document url-prefix("http://172.16.94.19:8080/JudgeOnline/userlist") {
+a[href="recentrank"]{
+	color:#fff;
+	font-family:微软雅黑;
+	font-size:20px;
+	text-decoration:none;
+	display:block;
+	background:#1b1b1bde;
+	width:980px;
+}
+
+a[href="recentrank"]:hover{
+	color:#366dff;
+	text-shadow:1px 1px 20px#4666f6;
+	background:#232323;
+
+}
+
+p[align="center"]{
+	display:block;
+	width:1040px;
+	position:relative;
+	margin:auto;
+	
+}
+
+a[href*="solved&od1=desc&of2=submit"]{
+	font-size:10px;
+	color:#fff;
+	display:inline-block;
+	width:120px;
+	text-decoration:none;
+	background:#3f3e3ee3;
+	text-align: center;
+position:relative;
+	right:-7px;
+	vertical-align: middle;
+	font-family:微软雅黑;
+}
+
+a[href*="userlist?start"]:hover{
+	background:#e0e0e0;
+	color:#2394ff;
+	font-weight:bold;
+	box-shadow:0 0 1px 1px #e0e0e0;
+}
+}
+
+@-moz-document url-prefix("http://172.16.94.19:8080/JudgeOnline/showproblem?problem_id") {
+/* 问题界面 */
+table[background="images/table_back.jpg"]  tbody tr td{
+	text-indent:0px;
+	padding:0px 0px 0px 10px;
+}
+
+tr td center{
+	position:static;
+}
+}
+
+@-moz-document url-prefix("http://172.16.94.19:8080/JudgeOnline/modifyuserpage") {
+font[size="4"][color="red"]{
+	color:#fff;
+	font-family:微软雅黑;
+	margin:auto;
+	display:block;
+	width:50%;
+	text-align:center;
+	background:#444444b8;
 }
 }
